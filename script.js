@@ -37,6 +37,7 @@ var contenedorForm = document.getElementById('contenedor');
 
 var nodosTr = Tr.getElementsByTagName('td');
 
+
 var gusto = nodosTr[0].textContent; 
 var porcentaje = nodosTr[1].textContent;
 var editar = nodosTr[2].textContent; 
