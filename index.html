@@ -22,40 +22,95 @@
             <div class="col">
                 <form id="form" width=100px>
                     <h6>formulario de afiliación</h6><br>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Nombre completo">
-                      </div>
-                      <div class="mb-3">
-                        <input type="email" class="form-control" placeholder="Email">
-                      </div>
-                      <div class="mb-3">
-                        <input type="text" class="form-control"  placeholder="Telefono">
-                      </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="Username" id="username"aria-describedby="basic-addon1">
+                        
+                        <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                          </svg></span>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Email" id="email" aria-describedby="basic-addon1">
+                        
+                        <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                          </svg></span>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Telefono" id="telefono" aria-label="Telefono" aria-describedby="basic-addon1">
+                        
+                        <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
+                            <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
+                          </svg></span>
+                    </div>
                       <div class="input-group mb-3">
-                        <input type="text" class="form-control" id="inputGustos" name="inputGustos" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <input type="text" class="form-control" id="inputGustos"  name="inputGustos" aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn btn-outline-success" id="button">Gustos</button>
                       </div>
                       <div id="container2" class="container">
                         
-                        <table id="table" class="table table-bordered">
-                            
-                                <tr>
-                                    <th >Gusto</th>
-                                    <th >%</th>
-                                    <th >edit</th>
-                                </tr>
-                                <tr>
-                                    <td>Perro</td>
-                                    <td>0</td>
-                                    <td><span onclick="cambiarEditable(this)">edit</span></td>
-                                </tr>
-                            
-                      </table>
+                       
+
+                      <table id="table" class="table table-bordered">
+
+                        
+                        
+                        <tr> 
+                            <th>Gusto</th> 
+                            <th>%</th> 
+                            <th>edit</th>
+                        
+                        </tr>
+                        
+                        <tr> 
+                            <td>perro</td> 
+                            <td>0</td> 
+                            <td><span class="editar" onclick="transformarEnEditable(this)">Editar</span></td>
+                        </tr>
+                        
+                        
+                        </table>
                     </div>
                 </form>
                 <div id="contenedor">
 
                 </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="container" class="container">
+        <div class="row">
+            <div class="col-6">
+                <img src="user.png" width="100px" alt="">
+            </div>
+            <div class="col-6">
+                <p id="username1" class="toUpper" ></p>
+            </div>
+        </div> <br>
+        <div class="row">
+            <div class="col-6">
+                <p>Email:</p>
+            </div>
+            <div class="col-6">
+                <p id="email1" class="toUpper1"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p>Telefono:</p>
+            </div>
+            <div class="col-6">
+                <p id="telefono1" class="toUpper2"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p>Gusto:</p>
+            </div>
+            <div class="col-6">
+                <p id="gusto1" class="toUpper3"></p>
             </div>
         </div>
     </div>
