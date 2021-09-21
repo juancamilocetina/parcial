@@ -1,0 +1,38 @@
+body{
+    background: #e8ecef;
+    font-family: 'Source Sans Pro';
+    
+}
+
+#web{
+    text-align: center;
+    margin-top: 150px;
+    font-size: 40px;
+    
+}
+
+#container{
+    width: 400px;
+    background: #ffffff;
+    padding: 30px;
+    margin: auto;
+    margin-top: 20px;
+    font-family: Helvetica;
+    color: rgb(103, 104, 104);
+    box-shadow: black;
+}
+#container2{
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(214, 214, 214);
+    border-radius: 5px;
+}
+#table{
+    margin-top: 15px;
+}
+
+#form h6 {
+    text-align: center;
+    font-family: 'Source Sans Pro';
+    font-size: 19px;
+}
